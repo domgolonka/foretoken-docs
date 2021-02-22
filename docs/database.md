@@ -7,6 +7,8 @@ slug: /database
 
 ## Database
 
-At this moment, you are able to use cache, PostgreSQL and SQLite.
+At this moment, you are able to use PostgreSQL and SQLite.
 
-To change 
+By Default, the SQLite driver is set to "in memory". To use a file, you need to 
+specify that the `host` to a `.sqlite3` extension, example: `host: "YOURNAME.sqlite3"`. This will create a 
+new SQLite file  in the root directory. 
