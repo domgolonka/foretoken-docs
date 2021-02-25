@@ -7,9 +7,11 @@ slug: /start
 
 ## Migrate
 
-**BEFORE YOU RUN THIS**, You need to migrate the database:
+**If using NON-MEMORY SQLITE or PostgreSQL, DO THIS BEFORE YOU RUN**, You need to migrate the database:
 
 `make migrate`
+
+:::Memory SQLite will always migrate at every run.
 
 ## How to run
 
