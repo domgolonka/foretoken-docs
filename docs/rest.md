@@ -6,9 +6,24 @@ slug: /rest
 ---
 
 
-### REST API
+## REST API
 
 The REST API to the example app is described below.
+
+
+### Rate Limiting
+
+You can enable the rate limiter for REST API in the `config.yml` file.
+
+    ratelimit:
+      enabled: true
+      max: 20 
+      expiration: 30 
+
+`Max` number of recent connections during `Duration` seconds before sending a 429 response
+ 
+`Expiration` is the time on how long to keep records of requests in memory per minute
+
 
 #### Request
 
