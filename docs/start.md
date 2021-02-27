@@ -23,9 +23,9 @@ You can also edit the config.yml to your preference. More in the [config section
 
 To run it on your local computer:
 
-    git clone https://github.com/domgolonka/threatdefender`
-    cd ./threatdefender
-    make build && ./bin/threatdefender
+    git clone https://github.com/domgolonka/Foretoken`
+    cd ./Foretoken
+    make build && ./bin/Foretoken
 
 
 The default config file is `config.yml`. If you want to run it with a different config file (or add your own)
@@ -33,18 +33,18 @@ The default config file is `config.yml`. If you want to run it with a different 
 
 `make build` (make sure to build it first)
 
-`./bin/threatdefender --config=/PATH/TO/CONFIG`
+`./bin/Foretoken --config=/PATH/TO/CONFIG`
 
 example:
-`./bin/threatdefender --config=./config.prod.yml`
+`./bin/Foretoken --config=./config.prod.yml`
 
 
 ## Docker 
 
 If docker is installed you can build an image and run this as a container.
 
-```docker build -t threatdefender .```
+```docker build -t Foretoken .```
 
-Once the image is built, ThreatDefender can be invoked by running the following:
+Once the image is built, Foretoken can be invoked by running the following:
 
-```docker run --rm -t threatdefender```
+```docker run --rm -t Foretoken```

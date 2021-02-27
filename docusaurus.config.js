@@ -1,18 +1,18 @@
 module.exports = {
-  title: 'Threat Defender',
+  title: 'Foretoken',
   tagline: 'A customizable modern-day defence tool using REST/gRPC protocols.',
-  url: 'https://threatdefender.domgolonka.com',
+  url: 'https://foretoken.domgolonka.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'domgolonka', // Usually your GitHub org/user name.
-  projectName: 'threatdefender', // Usually your repo name.
+  projectName: 'foretoken', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Threat Defender',
+      title: 'Foretoken',
       logo: {
-        alt: 'Threat Defender',
+        alt: 'Foretoken',
         src: 'img/logo.png',
       },
       items: [
@@ -24,7 +24,7 @@ module.exports = {
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/domgolonka/threatdefender',
+          href: 'https://github.com/domgolonka/foretoken',
           label: 'GitHub',
           position: 'right',
         },
@@ -47,7 +47,7 @@ module.exports = {
           items: [
             {
               label: 'Github',
-              href: 'https://github.com/domgolonka/threatdefender',
+              href: 'https://github.com/domgolonka/foretoken',
             },
             {
               label: 'Twitter',
@@ -65,7 +65,7 @@ module.exports = {
         //   ],
         // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Threat Defender, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Foretoken, Inc.`,
     },
   },
   presets: [
@@ -76,13 +76,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/domgolonka/threatdefender-docs/blob/main/docs',
+            'https://github.com/domgolonka/foretoken-docs/blob/main/docs',
         },
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
         //   editUrl:
-        //     'https://github.com/domgolonka/threatdefender-docs/blob/main/docs',
+        //     'https://github.com/domgolonka/foretoken-docs/blob/main/docs',
         // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
