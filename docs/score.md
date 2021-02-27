@@ -37,6 +37,11 @@ If not found, 10 will be taken away.
         catchall:
           yes: 10
           no: 0
+        domain: # domain age
+          week: 30  # younger than one week
+          month: 20 # younger than one month
+          year: 10 # younger than one year
+          yearplus: -10 # older than 1 years
     ip:
       score:
         proxy:

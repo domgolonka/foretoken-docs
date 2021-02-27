@@ -6,12 +6,12 @@ slug: /rest
 ---
 
 
-## REST API
+# REST API
 
 The REST API to the example app is described below.
 
 
-### Rate Limiting
+## Rate Limiting
 
 You can enable the rate limiter for REST API in the `config.yml` file.
 
@@ -25,6 +25,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
 `Expiration` is the time on how long to keep records of requests in memory per minute
 
 
+### Health
 #### Request
 
 `GET /health`
@@ -40,6 +41,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     
     {"http":true}
 
+### IP Proxy
 #### Request
 
 `GET /list/ip/proxy`
@@ -61,6 +63,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
         },
         ....
     
+### IP Spam    
 #### Request
 
 `GET /list/ip/spam`
@@ -77,6 +80,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     168.0.xxx.0/22
     202.49.xxx.0/24
 
+### IP VPN
 #### Request
 
 `GET /list/ip/vpn`
@@ -94,6 +98,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     lim-c04.xxx.com
     bhx-c05.xxx.com
 
+### IP Tor
 #### Request
 
 `GET /list/ip/tor`
@@ -111,6 +116,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     54.37.xxx.xxx
     109.70.xxx.xxx
 
+### Email Disposal
 #### Request
 
 `GET /list/email/disposal`
@@ -128,6 +134,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     xxx.com
     xxx.ca
 
+### Email Generic
 #### Request
 
 `GET /list/email/generic`
@@ -145,6 +152,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     xxx@
     xxx@
 
+### Email Spam
 #### Request
 
 `GET /list/email/spam`
@@ -162,6 +170,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     xxx.com
     xxx.ca
 
+### Email Free
 #### Request
 
 `GET /list/email/free`
@@ -179,6 +188,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     xxx.com
     xxx.ca
 
+### Email Score
 #### Request
 
 `GET /score/email/youremail@gmail.com`
@@ -194,6 +204,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
 
     10
 
+### IP Score
 #### Request
 
 `GET /score/ip/127.0.0.1`
@@ -208,7 +219,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     Transfer-Encoding: chunked
 
     0
-
+### Email Validation
 #### Request
 
 `GET /validate/email/youremail@gmail.com`
@@ -226,6 +237,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
     "valid": true
     }
 
+### Email 
 #### Request
 
 `GET /email/youremail@gmail.com`
@@ -253,6 +265,7 @@ You can enable the rate limiter for REST API in the `config.yml` file.
         }
     }
 
+### IP 
 #### Request
 
 `GET /ip/127.0.0.1`

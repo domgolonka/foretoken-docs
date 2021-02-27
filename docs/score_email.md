@@ -8,7 +8,7 @@ slug: /score_email
 The Email Score is outputted in JSON format. 
 You can get the score via [REST](rest.md) or [gRPC](grpc.md).
 
-#### Example output
+### Example output
     {
     "success": true,
     "valid": true,
@@ -25,7 +25,7 @@ You can get the score via [REST](rest.md) or [gRPC](grpc.md).
     }
     
     
- #### Parameters
+ ### Parameters
  
  | Field        |      Description      |   Possible Values |
  | ------------- | :-----------: | -----: |
