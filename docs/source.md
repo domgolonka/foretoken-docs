@@ -33,22 +33,29 @@ usually is a ipv4 or ipv6. For IP proxy, its http, https, sock4, sock5.
 
 ---
 
-### IPs
+### Emails and IPs
 
 The IP files are stored in the `./resource` directory and start with `ip_` such as `ip_tor` for tor.
+Each file takes in an array of sources:
 
-#### Spam
+    {
+      "name": "stopforumspam",
+      "url": "https://www.stopforumspam.com/downloads/toxic_domains_whole.txt",
+      "timeout": 10,
+      "feed": [
+        {
+          "score": 3,
+          "expression": "domain"
+        }
+      ]
+    }  
 
-#### Proxy
+- Name: The name of the source
+- URL: the URL of the source, this can be a text file, ipset or something similar
+- Timeout: Time before the link should timeout.
+- Feed: An array of feeds
+  - Score: The score between 0–5 (with 5 being the highest priority).
+  - Expression: This part references the regex expression name below.
 
-#### VPN
-
-#### Tor
-
-### Email
-
-#### Disposable
-
-#### Free
-
-#### Spam
+For each source, you can have multiple feeds with multiple expressions. 
+For example, if a source has both Ipv4 and Ipv6 in it, you can reference different regular expressions.
