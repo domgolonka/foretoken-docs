@@ -36,6 +36,21 @@ usually is a ipv4 or ipv6. For IP proxy, its http, https, sock4, sock5.
 ### Emails and IPs
 
 The IP files are stored in the `./resource` directory and start with `ip_` such as `ip_tor` for tor.
+
+You can add sources by adding a new file to `./resource` directory and updating the `config.yml` file:
+
+    ### Resource files
+    resource:
+      emaildisposallist: [ "email_disposable" ]
+      emailfreelist: [ "email_free" ]
+      emailspamlist: [ "email_spam" ]
+      ipvpnlist: [ "ip_vpn" ]
+      ipopenvpnlist: [ "ip_openvpn" ]
+      iptorlist: [ "ip_tor" ]
+      ipproxylist: [ "ip_proxy" ]
+      ipspamlist: [ "ip_spam" ]
+      expressionlist: [ "expressions" ]
+
 Each file takes in an array of sources:
 
     {

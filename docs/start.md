@@ -43,8 +43,16 @@ example:
 
 If docker is installed you can build an image and run this as a container.
 
-```docker build -t Foretoken .```
+```docker build -t foretoken .```
 
 Once the image is built, Foretoken can be invoked by running the following:
 
-```docker run --rm -t Foretoken```
+```docker run --rm -t -p 8080:8080 foretoken```
+
+Or run Docker from our repo:
+
+```docker run -d -p 8080:8080 domgolonka/foretoken```
+
+or with a custom config file:
+
+```docker run -d -p 8080:8080 domgolonka/foretoken --config=config.yml```
